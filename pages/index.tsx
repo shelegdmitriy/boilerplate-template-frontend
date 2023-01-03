@@ -26,8 +26,8 @@ export default function Home() {
                       <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
                     </svg>
                     <p className="ml-4">
-                      Customizing your&nbsp;
-                      <code className="text-sm font-bold text-gray-900">tailwind.config.js</code>&nbsp;file
+                      Start by editing&nbsp;
+                      <code className="text-sm font-bold text-gray-900">pages/index.tsx</code>&nbsp;file
                     </p>
                   </li>
 
