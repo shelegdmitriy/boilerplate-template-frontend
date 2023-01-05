@@ -1,6 +1,9 @@
 import Head from 'next/head';
+import { useWalletSelector } from '../hooks/wallet-selector';
 
 export default function Home() {
+  const contractName = 'guest-book.testnet';
+  const { accountId, modal, signOut } = useWalletSelector(contractName);
   return (
     <>
       <Head>
@@ -16,6 +19,18 @@ export default function Home() {
             <div className="mx-auto max-w-md">
               <div className="divide-y divide-gray-300/50">
                 <div className="space-y-6 py-8 text-base leading-7 text-gray-600">
+                  <div className='flex flex-row justify-between items-center'>
+                    {accountId && (
+                      <div>
+                        <p className='font-bold text-gray-900'>Hello &nbsp; {accountId}</p>
+                      </div>
+                    )}
+                    {accountId ? (
+                      <button className='bg-sky-500 rounded text-white px-2' onClick={() => signOut(contractName)}>Sign out</button>
+                    ) : (
+                      <button className='bg-sky-500 rounded text-white px-2' onClick={() => modal?.show()}>Sign in with NEAR Wallet</button>
+                    )}
+                  </div>
                   <p>An advanced frontend part of React Boilerplate Template including Next.js and Tailwind CSS</p>
                   <p>Next steps:</p>
                   <ul className="space-y-4">
