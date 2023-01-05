@@ -7,9 +7,15 @@
     "build:frontend": "cd frontend && npm run build",
     "start": "cd frontend && npm run start",
     "postinstall": "cd frontend && npm install",
-    "lint": "cd frontend && npm run lint"
+    "lint": "cd frontend && npm run lint",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13"
+    "autoprefixer": "^10.4.13",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0"
+  },
+  "lint-staged": {
+    "*/.{js,jsx,ts,tsx,css}": "prettier --write ."
   }
 }
