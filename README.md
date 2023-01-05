@@ -9,7 +9,7 @@
 </h1>
 
 <div align="center">
-  Boilerplate Template React
+  Boilerplate Template Frontend React
   <br />
   <br />
   <a href="https://github.com/shelegdmitriy/boilerplate-template-frontend/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
