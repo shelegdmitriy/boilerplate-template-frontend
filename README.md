@@ -54,7 +54,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ### Built With
 
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), [`tailwindcss`](https://tailwindcss.com/docs/guides/nextjs),  [amazing-github-template](https://github.com/dec0dOS/amazing-github-template)
+[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), [`tailwindcss`](https://tailwindcss.com/docs/guides/nextjs), [`tailwindui`](https://tailwindui.com/), [`@headlessui/react`](https://headlessui.com/), [`@heroicons/react`](https://heroicons.com/), [`amazing-github-template`](https://github.com/dec0dOS/amazing-github-template)
 
 Getting Started
 ==================
